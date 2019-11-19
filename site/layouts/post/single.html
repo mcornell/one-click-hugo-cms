@@ -11,7 +11,7 @@
       {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
       {{ .Content }}
       {{if .Params.cost }}<p>Cost: ${{ .Params.cost }}</p>{{ end }}  
-      {{if .Params.location }}{{ .Params.Location }}{{ end }}
+      {{if .Params.location }}{{ .Params.location }}{{ end }}
     </div>
   </div>
 {{ end }}
