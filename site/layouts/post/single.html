@@ -7,9 +7,11 @@
       <p>Read in {{ .ReadingTime }} minutes</p>
     </div>
     <div class="cms mw6">
-      <p>{{ .Description }}</p>
+      {{ if .Params.organizer }}<p>Organizer: {{ .Organizer }}</p>{{ end }}
       {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
       {{ .Content }}
+      {{if .Params.cost }}<p>Cost: ${{ .Cost }}</p>{{ end }}
+      {{if .Params.location }}{{ .Location }}{{ end }}
     </div>
   </div>
 {{ end }}

@@ -18,6 +18,10 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Organizer"
         name: "organizer"
         widget: "select"
+        options: 
+          - "Doug Kallgren"
+          - "Brandon Biesiadecki"
+          - "Mike Cornell"
         required: false
       - label: "Cost"
         name: "cost"
